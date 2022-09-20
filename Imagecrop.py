@@ -10,8 +10,8 @@ def save(image,path,obj, width=300,height=300):
     print("Image saved process completed")
 
 #--------------------------------Starting point----------------------------------
-photo = cv2.imread('aadhar.jpg')
-path = 'C:/Users/phani/OneDrive/Desktop/softwares/Python codes/Project01/CropedImage'
+photo = cv2.imread('upload your Aadhar card image here')
+path = 'here enter the path to save the image'
 gray = cv2.cvtColor(photo,cv2.COLOR_BGR2GRAY)
 faces  = detector(gray)
 '''start_point = [375, 300]
@@ -29,6 +29,3 @@ for counter, face in enumerate(faces):
 photo = cv2.resize(photo,(800,800))
 cv2.imshow('img', photo) 
 cv2.waitKey(0)
-
-
-#pallavi9019
