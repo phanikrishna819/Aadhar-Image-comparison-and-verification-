@@ -14,8 +14,8 @@ count=0
 
 def save(image,path,obj, width=300,height=300):
     x,y,w,h= obj
-    imagecrop = image[y:y+h,x:x+w]
-    imagecrop = cv2.resize(imagecrop, (width,height))
+    facecrop = image[y:y+h,x:x+w]
+    facecrop = cv2.resize(facecrop, (width,height))
     
     cv2.imwrite(path+'.jpg',imagecrop)
     print("Image saved process completed")
